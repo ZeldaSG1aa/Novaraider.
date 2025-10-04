@@ -1,0 +1,25 @@
+plugins {
+    id 'com.android.application'
+}
+android {
+    compileSdk 33
+    defaultConfig {
+        applicationId "net.novaraider.app"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            // apk will be unsigned (no signing configs) — you can sign it later.
+            minifyEnabled false
+        }
+    }
+    namespace 'net.novaraider.app'
+}
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.webkit:webkit:1.6.0'
+    implementation 'com.google.android.material:material:1.9.0'
+}
